@@ -1,7 +1,7 @@
 @login
 @All
 Feature: Login functionality for registered user
-
+#feature file for login
   Scenario: Login with valid credentials
     Given user is on the homepage
     When user clicks on Signup/Login button
