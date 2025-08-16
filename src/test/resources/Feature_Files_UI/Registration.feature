@@ -15,4 +15,4 @@ Feature: User Registration on askomdch.com
     Examples:
       | username     | email                    | password   |
       | shivkrishna  | shivkrishna@testmail.com | Pass@1234  |
-      | nehamona     | neha.mona@testmail.com   | Test@5678  |
+      | abc          | abc@testmail.com         | Test@5678  |
