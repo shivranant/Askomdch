@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 	    //features = "C:\\Users\\Asus\\Desktop\\Shivkrishna\\Integrated_framewrok\\resources\\Feature_Files_UI",             // folder where both .feature files exist
-		features = "resources/Feature_Files_UI",
+		features = "C:\\Users\\Asus\\Desktop\\Shivkrishna\\Integrated_framewrok\\src\\test\\resources\\Feature_Files_UI\\Registration.feature",
 	    glue = {"Step_Definations", "Hooks_Layer"},            // step definitions + hooks
 	    plugin = {
 	        "pretty",

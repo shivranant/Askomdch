@@ -1,13 +1,18 @@
-@Registration 
+@Registration
 @All
+Feature: User Registration on askomdch.com
+  As a new user
+  I want to register an account
+  So that I can place orders
 
+  Background:
+    Given User is on the AskOmDch registration page
 
-Feature: New User Registration on AutomationExercise
+  Scenario Outline: Successful registration with valid details
+    When User registers with username "<username>", email "<email>", and password "<password>"
+    Then User should be redirected to the My Account page
 
-  Scenario: Successful registration with valid details
-    Given User launches the application
-    When User clicks on Signup Login
-    And User enters name "shiva" and email "shiva1234567@gmail.com" for signup
-    And User fills registration details with password "shiva123456", first name "shiva", last name "shiva", address "123 Main Street", state "Maharashtra", city "Pune", zip "411001", mobile "9876543210"
-    And User clicks on Create Account button
-    Then Account should be created successfully
+    Examples:
+      | username     | email                    | password   |
+      | shivkrishna  | shivkrishna@testmail.com | Pass@1234  |
+      | nehamona     | neha.mona@testmail.com   | Test@5678  |
